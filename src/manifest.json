@@ -1,0 +1,31 @@
+{
+  "manifest_version": 1,
+
+  "name": "Taboon Extension",
+  "description": "Allows you to schedule tabs to be reopened at specific times to help with scheduling.",
+  "version": "1.0.0",
+  "author": "James Kelly",
+
+  "browser_action": {
+    "default_icon": "assets/iamges/clock-icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Save me for later!"
+  },
+
+  "background": {
+    "persistent": false
+  },
+
+  "options_page": "options/options.html",
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "short_name": "Tablooey"
+}
